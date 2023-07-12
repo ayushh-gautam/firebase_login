@@ -140,7 +140,8 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     IconButton(
                         onPressed: () {
-                          AuthService().singnWithGoogle();
+                          AuthService().signInWithGoogle();
+                         
                         },
                         icon: Image.asset(
                           'lib/assets/google.png',

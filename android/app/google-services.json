@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765781157278",
+    "project_id": "login-cb37c",
+    "storage_bucket": "login-cb37c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765781157278:android:d9b111234544d80808628f",
+        "android_client_info": {
+          "package_name": "com.example.login_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765781157278-dpflt6g81enrjq99e06mug9j5engk81i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkYq8XxhKA98QPR43x01CqnmwqNVuzuX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765781157278-dpflt6g81enrjq99e06mug9j5engk81i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

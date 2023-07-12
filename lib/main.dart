@@ -20,4 +20,4 @@ Future<void> main() async {
 then you can always comment out apply plugin: 'com.google.gms.google-services'
 in android->app->build.gradle 
 The error is like this ':app:mapDebugSourceSetPaths'.
-*/
+*/  

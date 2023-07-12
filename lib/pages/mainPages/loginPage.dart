@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:login_firebase/pages/Services/auth_service.dart';
 import '../widgets/customTextBox.dart';
 import '../widgets/signinButton.dart';
 
@@ -138,7 +139,9 @@ class _LoginPageState extends State<LoginPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          AuthService().singnWithGoogle();
+                        },
                         icon: Image.asset(
                           'lib/assets/google.png',
                         )),

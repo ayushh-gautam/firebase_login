@@ -22,11 +22,11 @@ class HomePage extends StatelessWidget {
         ),
         body: Column(
           children: [
-            ClipOval(
-              child: Image.network(user.photoURL!),
-            ),
+            // ClipOval(
+            //   child: Image.network(user.photoURL!),
+            // ),
             Center(
-              child: Text('Succesfully logged in as: ' + user.displayName!),
+              child: Text('Succesfully logged in as: ' + user.email!), 
             ),
           ],
         ));

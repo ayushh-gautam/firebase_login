@@ -1,10 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
-
 import 'package:firebase_auth/firebase_auth.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_firebase/pages/Services/auth_service.dart';
+import 'package:login_firebase/pages/mainPages/signup.dart';
 import '../widgets/customTextBox.dart';
 import '../widgets/signinButton.dart';
 
@@ -113,6 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20,
                 ),
                 MyButton(
+                  text: 'SignIn',
                   onTap: signIn,
                 ),
 
@@ -141,7 +141,6 @@ class _LoginPageState extends State<LoginPage> {
                     IconButton(
                         onPressed: () {
                           AuthService().signInWithGoogle();
-                         
                         },
                         icon: Image.asset(
                           'lib/assets/google.png',
@@ -171,12 +170,20 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(
                       width: 5,
                     ),
-                    Text(
-                      'Register now',
-                      style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.red.shade500,
-                          fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return SignUp();
+                        }));
+                      },
+                      child: Text(
+                        'Register now',
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.red.shade500,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 )
